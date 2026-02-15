@@ -28,14 +28,14 @@ class FornecedorController
         require __DIR__ . '/../views/layout.php';
     }
 
-    public function create()
-    {
-        ob_start();
-        require __DIR__ . '/../views/fornecedores/create.php';
-        $conteudo = ob_get_clean();
+  public function create()
+{
+    ob_start();
+    require __DIR__ . '/../views/produtos/create.php';
+    $conteudo = ob_get_clean();
 
-        require __DIR__ . '/../views/layout.php';
-    }
+    require __DIR__ . '/../views/layout.php';
+}
 
     public function edit()
     {

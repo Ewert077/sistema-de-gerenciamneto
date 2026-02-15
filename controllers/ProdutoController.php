@@ -32,10 +32,14 @@ public function index()
 }
 
 
-    public function create()
-    {
-        require __DIR__ . '/../views/produtos/create.php';
-    }
+ public function create()
+{
+    ob_start();
+    require __DIR__ . '/../views/produtos/create.php';
+    $conteudo = ob_get_clean();
+
+    require __DIR__ . '/../views/layout.php';
+}
 
     public function store()
     {
